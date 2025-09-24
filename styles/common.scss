@@ -1,0 +1,101 @@
+$main-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$gradient-text-reversed: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+$main: #323264;
+
+$accent: #F0145A;
+$blue: #24A3FF;
+$blue-hover: #0085FF;
+$blue_active: #006CCF;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 46px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+li {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+.link {
+  font-weight: 400;
+  color: $blue;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:active {
+    color: $blue-active;
+  }
+}
